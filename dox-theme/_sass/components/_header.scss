@@ -1,0 +1,20 @@
+/* =============================================================================
+   HEADER (components/_header.scss)
+   ========================================================================== */
+
+.c-header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+
+	.has-adminbar & {
+		top: 32px;
+
+		@media screen and (max-width: 782px) {
+			top: 46px;
+		}
+	}
+}
