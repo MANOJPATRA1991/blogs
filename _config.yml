@@ -21,16 +21,7 @@ dox:
             logo:
                 text: Project name
                 image:
-            copyright: Copyright &copy; 2017. - Project name <br>All rights reserved.
-        social_list:
-            - network_name: facebook
-              profile_url: '#'
-            - network_name: twitter
-              profile_url: '#'
-            - network_name: instagram
-              profile_url: '#'
-            - network_name: youtube
-              profile_url: '#'
+            text: Copyright &copy; 2018. - Project name <br>All rights reserved.
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
     comments:
