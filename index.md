@@ -1,26 +1,25 @@
 ---
 # Page settings
 layout: homepage
+title: Project name
 keywords:
 
 # Hero section
-title: Project name
-description: Project description
-buttons:
-    - content: Button
-      url: '#'
-      external_url: false
-    - icon: github
-      content: Button with icon
-      url: '#'
-      external_url: true
-
-# Author box
-author:
-    title: About Author
-    title_url: '#'
-    external_url: true
-    description: Author description
+hero:
+    title: Title
+    text: Lorem ipsum text
+    buttons:
+        - content: Button
+          url: '#'
+          external_url: false
+          style: 'bordered'
+        - content: Button with icon
+          url: '#'
+          external_url: true
+          style: 'full'
+    download_link:
+        label: Download — v4.0.0
+        url: https://example.com/
 
 # Grid navigation
 grid_navigation:

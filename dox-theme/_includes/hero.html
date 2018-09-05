@@ -1,0 +1,46 @@
+{% if page.hero.title or page.hero.text or page.hero.buttons or page.hero.download_link %}
+	<div class="u-bg-blue u-text-white u-pt-16 u-pb-16">
+		<div class="o-container">
+			<div class="o-row">
+				<div class="o-col-10@lg o-col-8@xl o-offset-1@lg">
+					{% if page.hero.title %}
+						<h2 class="u-text-xxl u-font-normal u-font-bold">{{ page.hero.title }}</h2>
+					{% endif %}
+					{% if page.hero.text %}
+						<div class="u-h5 u-mb-3">
+							<p>{{ page.hero.text }}</p>
+						</div>
+					{% endif %}
+					{% for button in page.hero.buttons %}
+						{% if button.external_url == true %}
+							{% if button.style == 'full' %}
+								<a href="{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
+									{{ button.content }}
+								</a>
+							{% elsif button.style == 'bordered' %}
+								<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+									{{ button.content }}
+								</a>
+							{% endif %}
+						{% else %}
+							{% if button.style == 'full' %}
+								<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
+									{{ button.content }}
+								</a>
+							{% elsif button.style == 'bordered' %}
+								<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+									{{ button.content }}
+								</a>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+					{% if page.hero.download_link.label and page.hero.download_link.url %}
+						<p class="u-text-sm">
+							<a href="{{ page.hero.download_link.url }}" target="_blank"><em>{{ page.hero.download_link.label }}</em></a>
+						</p>
+					{% endif %}
+				</div><!-- /.o-col -->
+			</div><!-- /.o-row -->
+		</div><!-- /.o-container -->
+	</div>
+{% endif %}
