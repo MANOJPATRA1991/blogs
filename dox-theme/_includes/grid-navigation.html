@@ -1,0 +1,30 @@
+{% if page.grid-navigation %}
+	<div class="{{ include.classes }}">
+		<div class="o-container">
+			<div class="o-row">
+				<div class="o-col-12">
+					<div class="o-row">
+						{% for item in page.grid-navigation %}
+							<div class="o-col-6@lg u-mb-3">
+								<a href="{{ item.url }}" class="c-feature-card c-feature-card--large">
+									<div class="c-feature-card__content">
+										{% if item.title %}
+											<h4 class="c-feature-card__title">{{ item.title }}</h4>
+										{% endif %}
+										{% if item.description %}
+											<p>{{ item.description }}</p>
+										{% endif %}
+										<button class="c-feature-card__cta">
+											Read More
+											<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="c-feature-card__cta-icon"><path fill="none" d="M0 0h24v24H0z"/><path fill="currentColor" d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
+										</button>
+									</div><!-- /.c-featured-card__content -->
+								</a><!-- /.c-feature-card -->
+							</div><!-- /.col -->
+						{% endfor %}
+					</div><!-- /.o-row -->
+				</div><!-- /.col -->
+			</div><!-- /.o-row -->
+		</div><!-- /.o-container -->
+	</div>
+{% endif %}

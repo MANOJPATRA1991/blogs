@@ -1,39 +1,57 @@
+{% if include.emphasize == true %}
+	{% assign title_classes = 'u-text-xxl u-font-normal u-font-bold' %}
+	{% assign description_classes = 'u-h5' %}
+{% else %}
+	{% assign title_classes = 'u-text-lg u-text-xl@sm' %}
+	{% assign description_classes = 'u-h6' %}
+{% endif %}
+
+{% if include.indent == true %}
+	{% assign column_classes = 'o-col-10@lg o-col-8@xl o-offset-1@lg' %}
+{% else %}
+	{% assign column_classes = 'o-col-8@lg o-col-7@xl' %}
+{% endif %}
+
 {% if page.hero.title or page.hero.text or page.hero.buttons or page.hero.download_link %}
-	<div class="u-bg-blue u-text-white u-pt-16 u-pb-16">
+	<div class="{{ include.classes }}">
 		<div class="o-container">
 			<div class="o-row">
-				<div class="o-col-10@lg o-col-8@xl o-offset-1@lg">
+				<div class="{{ column_classes }}">
 					{% if page.hero.title %}
-						<h2 class="u-text-xxl u-font-normal u-font-bold">{{ page.hero.title }}</h2>
+						<h2 class="{{ title_classes }}">{{ page.hero.title }}</h2>
 					{% endif %}
 					{% if page.hero.text %}
-						<div class="u-h5 u-mb-3">
+						<div class="{{ description_classes }}">
 							<p>{{ page.hero.text }}</p>
 						</div>
 					{% endif %}
-					{% for button in page.hero.buttons %}
-						{% if button.external_url == true %}
-							{% if button.style == 'full' %}
-								<a href="{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.label }}
-								</a>
-							{% elsif button.style == 'bordered' %}
-								<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.label }}
-								</a>
-							{% endif %}
-						{% else %}
-							{% if button.style == 'full' %}
-								<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.label }}
-								</a>
-							{% elsif button.style == 'bordered' %}
-								<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.label }}
-								</a>
-							{% endif %}
-						{% endif %}
-					{% endfor %}
+					{% if page.hero.buttons %}
+						<div class="u-mt-3">
+							{% for button in page.hero.buttons %}
+								{% if button.external_url == true %}
+									{% if button.style == 'full' %}
+										<a href="{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
+											{{ button.label }}
+										</a>
+									{% elsif button.style == 'bordered' %}
+										<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+											{{ button.label }}
+										</a>
+									{% endif %}
+								{% else %}
+									{% if button.style == 'full' %}
+										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
+											{{ button.label }}
+										</a>
+									{% elsif button.style == 'bordered' %}
+										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+											{{ button.label }}
+										</a>
+									{% endif %}
+								{% endif %}
+							{% endfor %}
+						</div>
+					{% endif %}
 					{% if page.hero.download_link.label and page.hero.download_link.url %}
 						<p class="u-text-sm">
 							<a href="{{ page.hero.download_link.url }}" target="_blank"><em>{{ page.hero.download_link.label }}</em></a>
