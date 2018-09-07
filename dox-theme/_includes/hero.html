@@ -15,21 +15,21 @@
 						{% if button.external_url == true %}
 							{% if button.style == 'full' %}
 								<a href="{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.content }}
+									{{ button.label }}
 								</a>
 							{% elsif button.style == 'bordered' %}
 								<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.content }}
+									{{ button.label }}
 								</a>
 							{% endif %}
 						{% else %}
 							{% if button.style == 'full' %}
 								<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.content }}
+									{{ button.label }}
 								</a>
 							{% elsif button.style == 'bordered' %}
 								<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
-									{{ button.content }}
+									{{ button.label }}
 								</a>
 							{% endif %}
 						{% endif %}

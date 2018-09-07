@@ -9,11 +9,11 @@ hero:
     title: Title
     text: Lorem ipsum text
     buttons:
-        - content: Button
+        - label: Button
           url: '#'
           external_url: false
           style: 'bordered'
-        - content: Button with icon
+        - label: Button with icon
           url: '#'
           external_url: true
           style: 'full'
