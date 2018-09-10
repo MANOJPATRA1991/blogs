@@ -38,7 +38,7 @@
 .c-arrow-link--prev {
 	&::before {
 		content: '';
-		background-image: url('../images/icons/icn-arrow-left.svg');
+		background-image: url('../images/icons/arrow-left.svg');
 		margin-right: 1.25rem;
 	}
 
@@ -54,7 +54,7 @@
 .c-arrow-link--next {
 	&::after {
 		content: '';
-		background-image: url('../images/icons/icn-arrow-right.svg');
+		background-image: url('../images/icons/arrow-right.svg');
 		margin-left: 1.25rem;
 	}
 
