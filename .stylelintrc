@@ -1,6 +1,6 @@
 {
     "ignoreFiles": [
-        "sass/vendors/**/*.scss"
+        "dox-theme/_sass/vendors/**/*.scss"
     ],
     "defaultSeverity": "warning",
     "rules": {
