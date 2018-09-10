@@ -90,7 +90,7 @@
 	pre,
 	table,
 	.asciicast,
-	.c-callout,
+	.callout,
 	.c-code-block-header {
 		@include media-breakpoint-up(lg) {
 			margin-right: (992px / $grid-columns) * -1 !important; /* stylelint-disable-line declaration-no-important */
