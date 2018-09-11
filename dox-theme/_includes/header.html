@@ -14,7 +14,11 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
-		<title>{{ site.dox.site_title }} | {{ page.title }}</title>
+		{% if page.url == "/" %}
+			<title>{{ site.dox.site_title }}</title>
+		{% else %}
+			<title>{{ page.title }} | {{ site.dox.site_title }}</title>
+		{% endif %}
 		{% if page.description %}
 			<meta name="description" content="{{ page.description }}">
 		{% endif %}
@@ -50,9 +54,15 @@
 						<div class="o-col-12">
 							<div class="u-flex u-items-center">
 								{% if site.dox.header.logo.text %}
-									<h1 class="c-logo u-mb-0 js-logo">
-										<a href="{% if jekyll.environment == 'production' %}{{ site.dox.baseurl }}{% endif %}/" class="c-logo__link">{{ site.dox.header.logo.text }}</a>
-									</h1><!-- /.c-logo -->
+									{% if page.url == "/" %}
+										<h1 class="c-logo u-mb-0 js-logo">
+											<a href="{% if jekyll.environment == 'production' %}{{ site.dox.baseurl }}{% endif %}/" class="c-logo__link">{{ site.dox.header.logo.text }}</a>
+										</h1><!-- /.c-logo -->
+									{% else %}
+										<p class="c-logo u-mb-0 js-logo">
+											<a href="{% if jekyll.environment == 'production' %}{{ site.dox.baseurl }}{% endif %}/" class="c-logo__link">{{ site.dox.header.logo.text }}</a>
+										</p><!-- /.c-logo -->
+									{% endif %}
 								{% elsif site.dox.header.logo.image %}
 									<div class="c-logo">
 										<a href="{% if jekyll.environment == 'production' %}{{ site.dox.baseurl }}{% endif %}/" class="c-logo__link">
