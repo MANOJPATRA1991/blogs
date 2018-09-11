@@ -1,5 +1,11 @@
+{% if include.bordered == true %}
+	{% assign classes = 'c-footer c-footer--bordered' %}
+{% else %}
+	{% assign classes = 'c-footer' %}
+{% endif %}
+
 		{% if site.dox.footer.content.logo.text or site.dox.footer.content.logo.image or site.dox.footer.content.text %}
-			<footer class="u-text-gray-100 u-text-sm">
+			<footer class="{{ classes }}">
 				<div class="o-container">
 					<div class="o-row">
 						<div class="o-col-12 u-mt-6 u-mt-8@md u-mb-4 u-mb-6@md">
@@ -18,7 +24,7 @@
 						</div><!-- /.o-col -->
 					</div><!-- /.o-row -->
 				</div><!-- /.o-container -->
-			</footer>
+			</footer><!-- /.c-footer -->
 		{% endif %}
 
 		<script type="text/javascript" src="{% if jekyll.environment == 'production' %}{{ site.dox.baseurl }}{% endif %}/dox-theme/assets/js/vendor/jquery-3.3.1.min.js"></script>
