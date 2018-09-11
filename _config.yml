@@ -27,6 +27,20 @@ dox:
     comments:
         disqus_forum_shortname: # Add your disqus forum shortname to activate comments
 
+# Defining collections
+collections:
+    documentation:
+        output: true
+
+# Defining defaults
+defaults:
+    -
+        scope:
+            path: ''
+            type: 'documentation'
+        values:
+            layout: 'documentation-single'
+
 # SASS settings
 sass:
     sass_dir: ./dox-theme/_sass
