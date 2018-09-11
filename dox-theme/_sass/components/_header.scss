@@ -9,12 +9,4 @@
 	z-index: 999;
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
-
-	.has-adminbar & {
-		top: 32px;
-
-		@media screen and (max-width: 782px) {
-			top: 46px;
-		}
-	}
 }

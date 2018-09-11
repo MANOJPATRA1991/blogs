@@ -15,21 +15,20 @@ $color-gray-100: #bbb !default;
 $color-gray-300: #575c61 !default;
 $color-white: #fff !default;
 $color-blue: #0976f8 !default;
-$color-dark-blue: #0759ba !default;
-$color-purple: #dc20aa !default;
 $color-green: #22d45f !default;
 $color-red: #e54d42 !default;
 $color-gold: #f4ba31 !default;
 $color-base: $color-gray-300 !default;
+$color-primary: $color-blue;
 $color-secondary: $color-blue !default;
 
 $colors: (
+	'primary': $color-primary,
 	'gray-30': $color-gray-30,
 	'gray-100': $color-gray-100,
 	'gray-300': $color-gray-300,
 	'white': $color-white,
 	'blue': $color-blue,
-	'dark-blue': $color-dark-blue,
 ) !default;
 
 

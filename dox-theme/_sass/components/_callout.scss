@@ -2,6 +2,11 @@
    CALLOUT (components/_callout.scss)
    ========================================================================== */
 
+/**
+ * Layer prefix is missing because this component will be used in markdown
+ * files. We don't want to bother users with CSS layer prefixes.
+ */
+
 .callout {
 	background-color: $color-gray-30;
 	border: 1px solid $color-gray-50;
@@ -19,8 +24,6 @@
 		}
 	}
 }
-
-
 
 /**
  * Type variations

@@ -22,66 +22,37 @@
    ========================================================================== */
 
 /**
- * Blue background color variation.
+ * Primary background color variation
  */
 
-.c-btn--blue {
+.c-btn--primary {
 	color: $color-white;
-	background-color: $color-blue;
+	background-color: $color-primary;
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: $color-dark-blue;
+		background-color: darken($color-primary, 10%);
 	}
 }
 
 /**
- * White background color variation.
+ * White background color variation
  */
 
-.c-btn--white-blue {
-	color: $color-blue;
+.c-btn--white {
+	color: $color-primary;
 	background-color: $color-white;
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: lighten($color-blue, 42%);
+		background-color: lighten($color-primary, 42%);
 	}
 }
 
 /**
- * White background color variation.
- */
-
-.c-btn--white-gray {
-	background-color: $color-white;
-
-	&:hover,
-	&:focus,
-	&:active {
-		background-color: lighten($color-base, 53%);
-	}
-}
-
-/**
- * Green color variant.
- */
-
-.c-btn--green {
-	color: $color-white;
-	background-color: $color-green;
-
-	&:hover,
-	&:focus,
-	&:active {
-		background-color: darken($color-green, 5%);
-	}
-}
-
-/**
- * Gray color variant.
+ * Gray background color variation
  */
 
 .c-btn--gray {
@@ -96,7 +67,7 @@
 }
 
 /**
- * Variant with gray border.
+ * Variant with gray border
  */
 
 .c-btn--bordered-gray {
@@ -112,23 +83,7 @@
 }
 
 /**
- * Variant with gray border.
- */
-
-.c-btn--bordered-blue {
-	color: $color-blue;
-	border: 1px solid $color-blue;
-	background-color: transparent;
-
-	&:hover,
-	&:focus,
-	&:active {
-		background-color: rgba($color-blue, .1);
-	}
-}
-
-/**
- * Variant with white border.
+ * Variant with white border
  */
 
 .c-btn--bordered-white {
@@ -144,7 +99,7 @@
 }
 
 /**
- * Size variants.
+ * Size variants
  */
 
 .c-btn--md {
@@ -153,13 +108,4 @@
 
 .c-btn--lg {
 	padding: .75rem 2.25rem;
-}
-
-/**
- * Full width variation
- */
-
-.c-btn--full {
-	display: block;
-	width: 100%;
 }

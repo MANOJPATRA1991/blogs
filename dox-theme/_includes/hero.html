@@ -30,7 +30,7 @@
 							{% for button in page.hero.buttons %}
 								{% if button.external_url == true %}
 									{% if button.style == 'full' %}
-										<a href="{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
+										<a href="{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
 											{{ button.label }}
 										</a>
 									{% elsif button.style == 'bordered' %}
@@ -40,7 +40,7 @@
 									{% endif %}
 								{% else %}
 									{% if button.style == 'full' %}
-										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white-blue c-btn--lg u-h6 u-mr-1 u-mb-2">
+										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
 											{{ button.label }}
 										</a>
 									{% elsif button.style == 'bordered' %}

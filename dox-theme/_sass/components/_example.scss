@@ -2,6 +2,11 @@
    EXAMPLE (components/_example.scss)
    ========================================================================== */
 
+/**
+ * Layer prefix is missing because this component will be used in markdown
+ * files. We don't want to bother users with CSS layer prefixes.
+ */
+
 .example {
 	position: relative;
 	color: $color-white;
@@ -24,7 +29,7 @@
 			height: 1rem;
 			background-image: url('../images/icons/open-in-new.svg');
 			margin-left: .375rem;
-			top: 3px;
+			top: .1875rem;
 		}
 
 		&:hover,

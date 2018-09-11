@@ -15,7 +15,7 @@
 		&:hover,
 		&:focus,
 		&:active {
-			color: $color-blue;
+			color: $color-primary;
 		}
 
 		&::before,
@@ -45,7 +45,7 @@
 		&.is-active {
 			&::before,
 			&::after {
-				background-color: $color-blue;
+				background-color: $color-primary;
 			}
 		}
 
@@ -73,6 +73,6 @@
 	margin-bottom: 1.125rem;
 
 	.is-active & {
-		color: $color-blue;
+		color: $color-primary;
 	}
 }
