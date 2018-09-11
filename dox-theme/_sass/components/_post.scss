@@ -91,7 +91,8 @@
 	table,
 	.asciicast,
 	.callout,
-	.example {
+	.example,
+	.c-comments {
 		@include media-breakpoint-up(lg) {
 			margin-right: (992px / $grid-columns) * -1 !important; /* stylelint-disable-line declaration-no-important */
 		}
