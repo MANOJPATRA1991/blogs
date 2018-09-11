@@ -1,6 +1,7 @@
 # Theme settings
 dox:
     baseurl:
+    site_title: Project Name
     color_theme: # Available themes: blue (default), green, purple, red and yellow
     header:
         logo:
