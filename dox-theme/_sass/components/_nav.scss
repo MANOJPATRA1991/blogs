@@ -16,7 +16,7 @@
 	li {
 		@extend .o-list-inline__item;
 
-		&.current-menu-item {
+		&.is-current {
 			a {
 				border-bottom-color: currentColor;
 

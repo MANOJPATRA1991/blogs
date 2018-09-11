@@ -75,7 +75,12 @@
 										{% if site.dox.header.nav %}
 											<ul class="c-nav u-mb-0 u-hidden u-block@lg">
 												{% for item in site.dox.header.nav %}
-													<li><a href="{% if jekyll.environment == 'production' %}{{ site.dox.baseurl }}{% endif %}{{ item.item_url }}">{{ item.item_name }}</a></li>
+													{% if item.item_name == page.title %}
+														{% assign item_classes = 'is-current' %}
+													{% else %}
+														{% assign item_classes = '' %}
+													{% endif %}
+													<li class="{{ item_classes }}"><a href="{% if jekyll.environment == 'production' %}{{ site.dox.baseurl }}{% endif %}{{ item.item_url }}">{{ item.item_name }}</a></li>
 												{% endfor %}
 											</ul><!-- /.c-nav -->
 										{% endif %}
