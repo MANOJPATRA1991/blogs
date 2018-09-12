@@ -13,7 +13,11 @@
 {% endif %}
 
 {% if page.hero.title or page.hero.text or page.hero.buttons or page.hero.download_link %}
-	<div class="{{ include.classes }}">
+	{% if page.hero.background_image %}
+		<div class="c-hero c-hero--has-bg-image {{ include.classes }}" style="background-image: url('{{ page.hero.background_image }}');">
+	{% else %}
+		<div class="c-hero {{ include.classes }}">
+	{% endif %}
 		<div class="o-container">
 			<div class="o-row">
 				<div class="{{ column_classes }}">
