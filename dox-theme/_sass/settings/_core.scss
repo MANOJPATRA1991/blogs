@@ -9,26 +9,57 @@
 /* Colors
    ========================================================================== */
 
+/**
+ * Themes
+ */
+
+$color-theme-blue: #0976f8 !default;
+$color-theme-purple: #9b59b6 !default;
+$color-theme-turquoise: #1abc9c !default;
+$color-theme-green: #2ecc71 !default;
+$color-theme-orange: #f39c12 !default;
+$color-theme-red: #e74c3c !default;
+
+/**
+ * Primary
+ */
+
+$color-primary: $color-theme-blue !default;
+
+/**
+ * Extra
+ */
+
+$color-white: #fff !default;
 $color-gray-30: #f7f8f9 !default;
 $color-gray-50: #e1e2e3 !default;
 $color-gray-100: #bbb !default;
 $color-gray-300: #575c61 !default;
-$color-white: #fff !default;
-$color-blue: #0976f8 !default;
-$color-green: #22d45f !default;
-$color-red: #e54d42 !default;
-$color-gold: #f4ba31 !default;
+
+/**
+ * Base
+ */
+
 $color-base: $color-gray-300 !default;
-$color-primary: $color-blue;
-$color-secondary: $color-blue !default;
+
+/**
+ * Callouts
+ */
+
+$color-info: #0976f8 !default;
+$color-success: #22d45f !default;
+$color-warning: #f4ba31 !default;
+$color-danger: #e54d42 !default;
+
+/**
+ * Color maps
+ */
 
 $colors: (
 	'primary': $color-primary,
-	'gray-30': $color-gray-30,
-	'gray-100': $color-gray-100,
-	'gray-300': $color-gray-300,
 	'white': $color-white,
-	'blue': $color-blue,
+	'gray-30': $color-gray-30,
+	'gray-300': $color-gray-300,
 ) !default;
 
 

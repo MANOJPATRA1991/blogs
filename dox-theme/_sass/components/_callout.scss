@@ -30,21 +30,21 @@
  */
 
 .callout--info {
-	background-color: lighten($color-blue, 47%);
-	border-color: lighten($color-blue, 40%);
+	background-color: lighten($color-info, 47%);
+	border-color: lighten($color-info, 40%);
 }
 
 .callout--warning {
-	background-color: lighten($color-gold, 38%);
-	border-color: lighten($color-gold, 28%);
+	background-color: lighten($color-warning, 38%);
+	border-color: lighten($color-warning, 28%);
 }
 
 .callout--danger {
-	background-color: lighten($color-red, 39%);
-	border-color: lighten($color-red, 30%);
+	background-color: lighten($color-danger, 39%);
+	border-color: lighten($color-danger, 30%);
 }
 
 .callout--success {
-	background-color: lighten($color-green, 48%);
-	border-color: lighten($color-green, 36%);
+	background-color: lighten($color-success, 48%);
+	border-color: lighten($color-success, 36%);
 }
