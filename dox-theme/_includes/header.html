@@ -9,7 +9,11 @@
 {% endif %}
 
 <!DOCTYPE html>
-<html>
+{% if site.dox.language %}
+	<html lang="{{ site.dox.language }}">
+{% else %}
+	<html>
+{% endif %}
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
