@@ -19,9 +19,9 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
 		{% if page.url == "/" %}
-			<title>{{ site.dox.site_title }}</title>
+			<title>{{ site.dox.title }}</title>
 		{% else %}
-			<title>{{ page.title }} | {{ site.dox.site_title }}</title>
+			<title>{{ page.title }} | {{ site.dox.title }}</title>
 		{% endif %}
 		{% if page.description %}
 			<meta name="description" content="{{ page.description }}">
