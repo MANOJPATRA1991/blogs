@@ -23,7 +23,7 @@
 								<div class="c-feature-card">
 									{% if item.icon %}
 										<div class="c-feature-card__icon">
-											{% include icons/{{ item.icon }}.svg %}
+											<i class="o-icon o-icon--{{ item.icon }}"></i>
 										</div><!-- /.c-feature-card__icon -->
 									{% endif %}
 									{% if item.title or item.description %}
@@ -56,7 +56,7 @@
 										<a href="{{ button.url }}" class="c-btn c-btn--gray c-btn--lg u-text-md u-mr-1 u-mb-2">
 											{{ button.label }}
 											<div class="c-btn__icon">
-												{% include icons/{{ button.icon }}.svg %}
+												<i class="o-icon o-icon--{{ button.icon }}"></i>
 											</div>
 										</a>
 									{% else %}
@@ -69,7 +69,7 @@
 										<a href="{{ button.url }}" class="c-btn c-btn--bordered-gray c-btn--lg u-text-md u-mr-1 u-mb-2">
 											{{ button.label }}
 											<div class="c-btn__icon">
-												{% include icons/{{ button.icon }}.svg %}
+												<i class="o-icon o-icon--{{ button.icon }}"></i>
 											</div>
 										</a>
 									{% else %}
@@ -84,7 +84,7 @@
 										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--gray c-btn--lg u-text-md u-mr-1 u-mb-2">
 											{{ button.label }}
 											<div class="c-btn__icon">
-												{% include icons/{{ button.icon }}.svg %}
+												<i class="o-icon o-icon--{{ button.icon }}"></i>
 											</div>
 										</a>
 									{% else %}
@@ -97,7 +97,7 @@
 										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-gray c-btn--lg u-text-md u-mr-1 u-mb-2">
 											{{ button.label }}
 											<div class="c-btn__icon">
-												{% include icons/{{ button.icon }}.svg %}
+												<i class="o-icon o-icon--{{ button.icon }}"></i>
 											</div>
 										</a>
 									{% else %}

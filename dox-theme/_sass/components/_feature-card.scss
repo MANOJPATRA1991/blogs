@@ -68,16 +68,17 @@
 .c-feature-card__cta {
 	font-weight: 500;
 	margin-bottom: 1.25rem;
-}
 
-.c-feature-card__cta-icon {
-	width: 1.5rem;
-	height: 1.5rem;
-	transition: transform .2s;
+	.o-icon {
+		font-size: 1.375rem;
+		position: relative;
+		top: 4px;
+		transition: transform .2s;
 
-	.c-feature-card:hover &,
-	.c-feature-card:focus &,
-	.c-feature-card:active & {
-		transform: translateX(.3125rem);
+		.c-feature-card:hover &,
+		.c-feature-card:focus &,
+		.c-feature-card:active & {
+			transform: translateX(.3125rem);
+		}
 	}
 }

@@ -38,7 +38,7 @@
 											<a href="{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
 												{{ button.label }}
 												<div class="c-btn__icon">
-													{% include icons/{{ button.icon }}.svg %}
+													<i class="o-icon o-icon--{{ button.icon }}"></i>
 												</div>
 											</a>
 										{% else %}
@@ -51,7 +51,7 @@
 											<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
 												{{ button.label }}
 												<div class="c-btn__icon">
-													{% include icons/{{ button.icon }}.svg %}
+													<i class="o-icon o-icon--{{ button.icon }}"></i>
 												</div>
 											</a>
 										{% else %}
@@ -66,7 +66,7 @@
 											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
 												{{ button.label }}
 												<div class="c-btn__icon">
-													{% include icons/{{ button.icon }}.svg %}
+													<i class="o-icon o-icon--{{ button.icon }}"></i>
 												</div>
 											</a>
 										{% else %}
@@ -79,7 +79,7 @@
 											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
 												{{ button.label }}
 												<div class="c-btn__icon">
-													{% include icons/{{ button.icon }}.svg %}
+													<i class="o-icon o-icon--{{ button.icon }}"></i>
 												</div>
 											</a>
 										{% else %}

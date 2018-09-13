@@ -45,6 +45,7 @@
    ========================================================================== */
 
 @import 'generic/box-sizing';
+@import 'generic/fonts';
 @import 'generic/normalize';
 @import 'generic/reset';
 
@@ -69,6 +70,7 @@
    ========================================================================== */
 
 @import 'objects/grid';
+@import 'objects/icons';
 @import 'objects/link-bare';
 @import 'objects/list-bare';
 @import 'objects/list-inline';
