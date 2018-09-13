@@ -34,23 +34,59 @@
 							{% for button in page.hero.buttons %}
 								{% if button.external_url == true %}
 									{% if button.style == 'full' %}
-										<a href="{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
-											{{ button.label }}
-										</a>
+										{% if button.icon %}
+											<a href="{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+												<div class="c-btn__icon">
+													{% include icons/{{ button.icon }}.svg %}
+												</div>
+											</a>
+										{% else %}
+											<a href="{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+											</a>
+										{% endif %}
 									{% elsif button.style == 'bordered' %}
-										<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
-											{{ button.label }}
-										</a>
+										{% if button.icon %}
+											<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+												<div class="c-btn__icon">
+													{% include icons/{{ button.icon }}.svg %}
+												</div>
+											</a>
+										{% else %}
+											<a href="{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+											</a>
+										{% endif %}
 									{% endif %}
 								{% else %}
 									{% if button.style == 'full' %}
-										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
-											{{ button.label }}
-										</a>
+										{% if button.icon %}
+											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+												<div class="c-btn__icon">
+													{% include icons/{{ button.icon }}.svg %}
+												</div>
+											</a>
+										{% else %}
+											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+											</a>
+										{% endif %}
 									{% elsif button.style == 'bordered' %}
-										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
-											{{ button.label }}
-										</a>
+										{% if button.icon %}
+											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+												<div class="c-btn__icon">
+													{% include icons/{{ button.icon }}.svg %}
+												</div>
+											</a>
+										{% else %}
+											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--bordered-white c-btn--lg u-h6 u-mr-1 u-mb-2">
+												{{ button.label }}
+											</a>
+										{% endif %}
 									{% endif %}
 								{% endif %}
 							{% endfor %}
