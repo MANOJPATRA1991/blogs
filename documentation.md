@@ -1,11 +1,12 @@
 ---
 # Page settings
-layout: documentation-archive
-title: Documentation
-keywords:
+layout: documentation-archive # Choose layout: "default", "homepage" or "documentation-archive"
+title: Documentation # Define a title of your page
+description: # Define a description of your page
+keywords: # Define keywords for search engines
 
 # Hero section
 hero:
-    title: Documentation
-    text: Documentation is here to help you and to make your life easier. We recommend you to take a deep look at every section available, it might save you a lot of time in the future.
+    title: Hero section — Title
+    text: Hero section — Text
 ---

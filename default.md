@@ -1,31 +1,10 @@
 ---
 # Page settings
-layout: default
-keywords:
-comments: false
-
-# Hero section
-title: Page title
-description: Page description
-
-# Author box
-author:
-    title: About Author
-    title_url: '#'
-    external_url: true
-    description: Author description
-
-# Micro navigation
-micro_nav: true
-
-# Page navigation
-page_nav:
-    prev:
-        content: Previous page
-        url: '#'
-    next:
-        content: Next page
-        url: '#'
+layout: default # Choose layout: "default", "homepage" or "documentation-archive"
+title: Default layout — Title # Define a title of your page
+description: Default layout — Description # Define a description of your page
+keywords: # Define keywords for search engines
+comments: false # Set to "true" in order to enable comments on this page. Make sure you properly setup "disqus_forum_shortname" variable in "_config.yml"
 ---
 
-Write your markdown here ...
+Add your markdown content here ...

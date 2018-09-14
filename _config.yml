@@ -1,21 +1,21 @@
 # Theme settings
 dox:
     baseurl:
-    site_title: Project Name
+    title: Project Name
+    language: en-US # Use ISO language and country codes to setup language of your website - https://www.w3schools.com/tags/ref_language_codes.asp and https://www.w3schools.com/tags/ref_country_codes.asp
     header:
         logo:
             text: Project Name
             image:
         nav:
-            - item_name: Item 1
-              item_url: '#'
-            - item_name: Item 2
-              item_url: '#'
-            - item_name: Item 3
-              item_url: '#'
+            - item_name: Homepage
+              item_url: /
+            - item_name: Default Layout
+              item_url: /default
         cta:
-            label: CTA Label
-            url: https://example.com/
+            label: Documentation
+            url: /documentation
+            icon: folder # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
     footer:
         content:
             logo:
@@ -25,7 +25,7 @@ dox:
     google_analytics:
         tracking_code: # Add your Google Analytics tracking code to activate Google Analytics
     comments:
-        disqus_forum_shortname: # Add your disqus forum shortname to activate comments
+        disqus_forum_shortname: # Add your Disqus forum shortname to activate comments site-wide
 
 # Defining collections
 collections:
