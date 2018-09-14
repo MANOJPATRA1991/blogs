@@ -51,7 +51,7 @@
 						{% endif %}
 						{% for button in page.features.footer.buttons %}
 							{% if button.external_url == true %}
-								{% if button.style == 'full' %}
+								{% if button.style == 'filled' %}
 									{% if button.icon %}
 										<a href="{{ button.url }}" class="c-btn c-btn--gray c-btn--lg u-text-md u-mr-1 u-mb-2">
 											{{ button.label }}
@@ -79,7 +79,7 @@
 									{% endif %}
 								{% endif %}
 							{% else %}
-								{% if button.style == 'full' %}
+								{% if button.style == 'filled' %}
 									{% if button.icon %}
 										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--gray c-btn--lg u-text-md u-mr-1 u-mb-2">
 											{{ button.label }}

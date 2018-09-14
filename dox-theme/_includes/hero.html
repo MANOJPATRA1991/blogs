@@ -33,7 +33,7 @@
 						<div class="u-mt-3">
 							{% for button in page.hero.buttons %}
 								{% if button.external_url == true %}
-									{% if button.style == 'full' %}
+									{% if button.style == 'filled' %}
 										{% if button.icon %}
 											<a href="{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
 												{{ button.label }}
@@ -61,7 +61,7 @@
 										{% endif %}
 									{% endif %}
 								{% else %}
-									{% if button.style == 'full' %}
+									{% if button.style == 'filled' %}
 										{% if button.icon %}
 											<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ button.url }}" class="c-btn c-btn--white c-btn--lg u-h6 u-mr-1 u-mb-2">
 												{{ button.label }}

@@ -45,7 +45,16 @@
 						</ul><!-- /.c-nav -->
 					{% endif %}
 					{% if site.dox.header.cta %}
-						<a href="{{ site.dox.header.cta.url }}" class="c-btn c-btn--md c-btn--gray u-text-md">{{ site.dox.header.cta.label }}</a>
+						{% if site.dox.header.cta.icon %}
+							<a href="{{ site.dox.header.cta.url }}" class="c-btn c-btn--md c-btn--gray u-text-md">
+								{{ site.dox.header.cta.label }}
+								<div class="c-btn__icon">
+									<i class="o-icon o-icon--{{ site.dox.header.cta.icon }}"></i>
+								</div>
+							</a>
+						{% else %}
+							<a href="{{ site.dox.header.cta.url }}" class="c-btn c-btn--md c-btn--gray u-text-md">{{ site.dox.header.cta.label }}</a>
+						{% endif %}
 					{% endif %}
 				</div><!-- /.c-offcanvas__inner -->
 			</div><!-- /.c-offcanvas -->
@@ -90,7 +99,16 @@
 										{% endif %}
 										{% if site.dox.header.cta %}
 											<div class="u-ml-5 u-hidden u-block@lg">
-												<a href="{{ site.dox.header.cta.url }}" class="{{ cta_classes }}">{{ site.dox.header.cta.label }}</a>
+												{% if site.dox.header.cta.icon %}
+													<a href="{{ site.dox.header.cta.url }}" class="{{ cta_classes }}">
+														{{ site.dox.header.cta.label }}
+														<div class="c-btn__icon">
+															<i class="o-icon o-icon--{{ site.dox.header.cta.icon }}"></i>
+														</div>
+													</a>
+												{% else %}
+													<a href="{{ site.dox.header.cta.url }}" class="{{ cta_classes }}">{{ site.dox.header.cta.label }}</a>
+												{% endif %}
 											</div>
 										{% endif %}
 									</div>
