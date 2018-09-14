@@ -4,7 +4,7 @@
 	<div class="u-bg-gray-30 u-pt-16 u-pb-10">
 		<div class="o-container">
 			<div class="o-row">
-				<div class="o-col-11@lg o-col-7@xl">
+				<div class="o-col-11@lg o-col-7@xl u-mx-auto@xl">
 					{% if page.title %}
 						<h1 class="u-text-lg u-text-xl@sm">{{ page.title }}</h1>
 					{% endif %}
@@ -22,8 +22,8 @@
 <div class="u-pt-8 u-pb-5">
 	<div class="o-container">
 		<div class="o-row">
-			<div class="o-col-11@lg o-col-7@xl">
-				<div class="c-post u-mb-3@lg">
+			<div class="o-col-11@lg o-col-7@xl u-mx-auto@xl">
+				<div class="c-post u-mb-3@lg js-post">
 					{{ content }}
 					{% include comments.html classes='u-mt-8 u-mb-3' %}
 				</div><!-- /.c-post -->
