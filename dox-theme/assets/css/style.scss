@@ -29,6 +29,19 @@
 /* Settings
    ========================================================================== */
 
+/**
+ * Defined theme color that's used as `$color-primary` in `settings/_core.scss`.
+ *
+ * Needs to be defined in `style.scss` because Jekyll can't process its
+ * variables in `.scss` partials.
+ */
+
+$color-theme: {{ site.dox.theme-color }} !default;
+
+/**
+ * Settings partials
+ */
+
 @import 'settings/core';
 
 
