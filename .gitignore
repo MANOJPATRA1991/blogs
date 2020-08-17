@@ -20,3 +20,5 @@ Thumbs.db
 # ---------------
 .sass-cache
 _site
+
+.jekyll-cache
