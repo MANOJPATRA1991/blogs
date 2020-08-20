@@ -40,14 +40,14 @@ features:
         - title: Contents
           description: 
           grid: # Add feature grid items below, there are examples with all available options
-              - title: Front-end Development
-                description: Lorem Ipsum <br /><br /> <a href="/documentation">Explore More</a>
-                icon: book
-              - title: Data Structures
-                description: Lorem Ipsum <br /><br /> <a href="/documentation">Explore More</a>
-                icon: book
+              # - title: Front-end Development
+              #   description: Lorem Ipsum <br /><br /> <a href="/documentation">Explore More</a>
+              #   icon: book
+              # - title: Data Structures
+              #   description: Lorem Ipsum <br /><br /> <a href="/documentation">Explore More</a>
+              #   icon: book
               - title: Reinforcement Learning
-                description: Lorem Ipsum <br /><br /> <a href="/documentation">Explore More</a>
+                description: Lorem Ipsum <br /><br /> <a href="/reinforcement-learning">Explore More</a>
                 icon: book # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
               # - title: Feature 2 — Title
               #   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.

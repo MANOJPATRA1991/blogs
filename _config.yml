@@ -1,6 +1,6 @@
 # Theme settings
 dox:
-    baseurl:
+    baseurl: 
     title: CODELIVE
     theme_color: '#0976f8' # Define theme primary color with HEX value
     language: en-US # Use ISO language and country codes to setup language of your website - https://www.w3schools.com/tags/ref_language_codes.asp and https://www.w3schools.com/tags/ref_country_codes.asp
@@ -9,10 +9,10 @@ dox:
             text: CODELIVE
             image: 
         nav:
-            - item_name: Web
-              item_url: /default
+            # - item_name: Web
+            #   item_url: /web
             - item_name: Data Science
-              item_url: /default
+              item_url: /data-science
         # cta:
         #     label: Documentation
         #     url: /documentation
@@ -31,9 +31,17 @@ dox:
 collections:
     documentation:
         output: true
+    reinforcement_learning:
+        output: true
 
 # Defining defaults
 defaults:
+    -
+        scope:
+            path: ''
+            type: 'reinforcement_learning'
+        values:
+            layout: 'rl-single'
     -
         scope:
             path: ''
