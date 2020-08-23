@@ -1,5 +1,6 @@
 # Theme settings
 dox:
+    livereload: true
     baseurl: 
     title: CODELIVE
     theme_color: '#0976f8' # Define theme primary color with HEX value
@@ -33,6 +34,8 @@ collections:
         output: true
     reinforcement_learning:
         output: true
+    tensorflow:
+        output: true
 
 # Defining defaults
 defaults:
@@ -41,7 +44,13 @@ defaults:
             path: ''
             type: 'reinforcement_learning'
         values:
-            layout: 'rl-single'
+            layout: 'documentation-single'
+    -
+        scope:
+            path: ''
+            type: 'tensorflow'
+        values:
+            layout: 'documentation-single'
     -
         scope:
             path: ''

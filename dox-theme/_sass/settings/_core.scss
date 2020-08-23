@@ -13,6 +13,10 @@
  * Primary
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 $color-primary: $color-theme !default;
 
 /**
@@ -62,9 +66,9 @@ $colors: (
 
 $font-size-base: 16px !default;
 $font-size-base-mobile: 14px !default;
-$line-height-base: 1.75 !default;
-$font-family-base: 'IBM Plex Sans', sans-serif !default;
-$font-family-monospace: 'IBM Plex Mono', monospace !default;
+$line-height-base: 1.75 !default; 
+$font-family-base: 'Handlee', 'Nanum Gothic', 'IBM Plex Sans', sans-serif !default;
+$font-family-monospace: 'Monaco', 'Nanum Gothic Coding', 'IBM Plex Mono', monospace !default;
 
 /**
  * Weights
