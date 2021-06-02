@@ -26,3 +26,22 @@ hero:
 5. All the functionality of the host language is available while the model is executing
 6. Computing gradients eagerly during training using `tf.GradientTape`
   * `tf.GradientTape` can only compute one gradient; subsequent calls throw a runtime error.
+7. Use the assert functions in `tf.debugging` to check if a condition holds up - both eager and graph execution.
+8. We can call the model even without training and inspect the output in eager execution.
+
+## Variables
+
+`tf.Variable` objects store mutable `tf.Tensor`-like values accessed during training to make automatic differentiation easier. 
+
+Variables persist until the last reference to the python object is removed.
+
+## Object-based saving
+
+A `tf.keras.Model` includes a `save_weights` method to easily create a checkpoint.
+
+Using `tf.train.Checkpoint` we can take full control over this process and restore values from the checkpoint.
+
+## Extras
+
+1. To create a constant, use `tf.constant`.
+2. To convert to tensor, use `tf.convert_to_tensor`.
