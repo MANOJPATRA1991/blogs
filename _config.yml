@@ -10,10 +10,10 @@ dox:
             text: CODELIVE
             image: 
         nav:
-            # - item_name: Web
-            #   item_url: /web
-            - item_name: Data Science
-              item_url: /data-science
+            - item_name: Web
+              item_url: /web
+            # - item_name: Data Science
+            #   item_url: /data-science
         # cta:
         #     label: Documentation
         #     url: /documentation

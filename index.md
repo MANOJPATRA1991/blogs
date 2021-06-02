@@ -8,7 +8,7 @@ keywords: # Define keywords for search engines
 # Hero section
 hero:
     title: Exploring 
-    text: Machine Learning | Data Science | Web Developement | Application Developement
+    text: Web Developement | Application Developement
     background_image: https://i.pinimg.com/originals/04/ef/5e/04ef5e1743f2123165f573616c533885.jpg
     buttons: # Add buttons below, there are examples with all available options
         - label: GitHub
@@ -46,12 +46,12 @@ features:
               # - title: Data Structures
               #   description: Lorem Ipsum <br /><br /> <a href="/documentation">Explore More</a>
               #   icon: book
-              - title: Reinforcement Learning Notes
-                description: Agents, actions and rewards <br /><br /> <a href="/reinforcement_learning">Explore More</a>
-                icon: book # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
-              - title: Tensorflow Notes
-                description: E2E open-source platform for ML <br /><br /> <a href="/tensorflow">Explore More</a>
-                icon: book
+              # - title: Reinforcement Learning Notes
+              #   description: Agents, actions and rewards <br /><br /> <a href="/reinforcement_learning">Explore More</a>
+              #   icon: book # Choose from 266 icons in "Feather" icon set, list of all icons is available here - https://feathericons.com
+              # - title: Tensorflow Notes
+              #   description: E2E open-source platform for ML <br /><br /> <a href="/tensorflow">Explore More</a>
+              #   icon: book
               # - title: Feature 2 — Title
               #   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident iste voluptas sunt eligendi sit dolorem blanditiis nostrum, fuga ducimus enim? Ut temporibus.
               #   icon: book-open
