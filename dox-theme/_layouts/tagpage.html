@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="{{ include.classes }}">
+  <div class="o-container">
+    <div class="o-row">
+      <div class="o-col-12">
+        <div class="o-row">
+          {% for post in site.documentation %}
+            {% if post.tags contains page.tag %}
+            <div class="o-col-6@lg u-mb-3">
+              <a href="{{ post.url }}" class="c-feature-card c-feature-card--large">
+                <div class="c-feature-card__content">
+                  {% if post.title %}
+                  <h4 class="c-feature-card__title">{{ post.title }}</h4>
+                  {% endif %}
+                  {% if post.description %}
+                  <p>{{ post.description }}</p>
+                  {% endif %}
+                  <button class="c-feature-card__cta">
+                    Read More
+                    <i class="o-icon o-icon--arrow-right"></i>
+                  </button>
+                </div><!-- /.c-featured-card__content -->
+              </a><!-- /.c-feature-card -->
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div><!-- /.o-row -->
+      </div><!-- /.col -->
+    </div><!-- /.o-row -->
+  </div><!-- /.o-container -->
+</div>
