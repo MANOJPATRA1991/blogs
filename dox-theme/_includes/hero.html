@@ -53,7 +53,7 @@
 					<span>
 						{% for tag in page.tags %}
 							{% assign tag_slug = tag | slugify: "raw" %}
-							<a class="tag" href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }} rel="category tag">
+							<a class="tag" href={{ site.dox.baseurl | append: "/tags/" | append: tag_slug | append: "/" }} rel="category tag">
 								<code>
 									{{ tag }}
 								</code>

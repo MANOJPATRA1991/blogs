@@ -23,7 +23,7 @@
 					<div class="o-row u-mb-5">
 						{% for item in row.grid %}
 							<div class="o-col-6@md o-col-4@lg u-mb-3">
-								<a href="{{ item.url }}" class="c-feature-card c-feature-card--large">
+								<a href={{ site.dox.baseurl | append: item.url | append: "/" }} class="c-feature-card c-feature-card--large">
 									{% if item.icon %}
 										<div class="c-feature-card__icon">
 											<i class="o-icon o-icon--{{ item.icon }}"></i>
