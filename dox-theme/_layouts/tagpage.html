@@ -9,7 +9,7 @@ layout: default
           {% for post in site.documentation %}
             {% if post.tags contains page.tag %}
             <div class="o-col-6@lg u-mb-3">
-              <a href="{{ post.url }}" class="c-feature-card c-feature-card--large">
+              <a href={{ site.dox.baseurl | append: item.url | append: "/" }} class="c-feature-card c-feature-card--large">
                 <div class="c-feature-card__content">
                   {% if post.title %}
                   <h4 class="c-feature-card__title">{{ post.title }}</h4>
